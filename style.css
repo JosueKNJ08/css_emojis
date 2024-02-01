@@ -1,0 +1,28 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    position: relative;
+    
+}
+.main{
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    top:250px;
+    width: 100%;
+    min-width: 200px;
+}
+.emoji{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 242, 0);
+    border-radius: 50%;
+    overflow: hidden;
+}
