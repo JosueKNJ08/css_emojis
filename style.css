@@ -6,7 +6,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: pink;
+    background-color: rgb(7, 227, 44);
     position: relative;
     
 }
@@ -16,7 +16,6 @@ body{
     position: absolute;
     top:250px;
     width: 100%;
-    min-width: 200px;
 }
 .emoji{
     margin: 10px;
@@ -25,4 +24,96 @@ body{
     background-color: rgb(255, 242, 0);
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
+}
+.eyes{
+    position:absolute;
+    height: 25%;
+    width: 80%;
+    top: 25%;
+    right: 10%;
+}
+.right-eye, .left-eye{
+    background-color: black;
+    position: absolute;
+    height: 90%;
+    width: 15%;
+    border-radius: 50%;
+}
+.right-eye{
+    top: 5%;
+    right: 15%;
+}
+.left-eye{
+    top: 5%;
+    left: 15%;
+}
+.smyling-mouth{
+    background-color: black;
+    position: absolute;
+    bottom: 10%;
+    right: 17.5%;
+    height: 35%;
+    width: 65%;
+    border-radius: 10px 10px 350px 350px;
+}
+.surpized-mouth{
+    background-color: black;
+    position: absolute;
+    bottom: 10%;
+    right: 37.5%;
+    height: 35%;
+    width: 25%;
+    border-radius: 50%;
+}
+.masked-mouth{
+    background-color: white;
+    position: absolute;
+    bottom: 10%;
+    right: 22.5%;
+    height: 35%;
+    width: 55%;
+    border-radius: 10px;
+    border: solid 2px gray;
+    z-index: 1;
+} 
+.file{
+    position: absolute;
+    background-color: white;
+    border: solid 2px gray;
+    height: 5%;
+    width: 40%;
+}
+.file-1{
+    top: 55%;
+    transform: rotate(20deg);
+    z-index: 0;
+    left: -10%;
+}
+.file-2{
+    top: 55%;
+    transform: rotate(-20deg);
+    z-index: 0;
+    right: -10%;
+}
+.file-3{
+    bottom: 10%;
+    transform: rotate(-30deg);
+    z-index: 0;
+    left: -10%;
+}
+.file-4{
+    bottom: 10%;
+    transform: rotate(30deg);
+    z-index: 0;
+    right: -10%;
+}
+@media (max-width: 650px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 15%;
+    }
 }
